@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .project-cards {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        .card:nth-child(1) {
+            background-color: #ffeb3b;
+            /* Yellow */
+        }
+
+        .card:nth-child(2) {
+            background-color: #8bc34a;
+            /* Light Green */
+        }
+
+        .card:nth-child(3) {
+            background-color: #03a9f4;
+            /* Light Blue */
+        }
+
+        .card:nth-child(4) {
+            background-color: #ff5722;
+            /* Deep Orange */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background-color: #e0e0e0;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #0ef;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .card a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><span>M</span>ukesh</a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </header>
+    <!-- home section -->
+    <section class="home">
+        <div class="home-text">
+            <span>Student</span>
+            <h1>Mukesh Sai Durga Kumar</h1>
+            <p>Unlocking Potential, Delivering Excellence, and Driving Success
+                Enthusiastic about exploring emerging technologies
+            </p>
+            <div class="main-btn">
+                <a href="mukesh_resume.pdf" download class="btn">Download Cv</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="my dp.jpg" alt="my photo">
+        </div>
+    </section>
+    <div class="share">
+        <p>Check Out My:</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/kada-mukesh/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/kadamukesh"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/muke__sai__00/"><i class='bx bxl-instagram'></i></a>
+            <a href="mailto:mukeshkada2@gmail.com"><i class='bx bxl-gmail'></i></a>
+        </div>
+    </div>
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-img">
+        </div>
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <h4>Full Stack Developer</h4>
+            <p>I am a third-year B.Tech student at KL University, pursuing a degree in Computer Science and Engineering
+                with Honors.
+                With a CGPA of 9.5, I am dedicated to academic excellence and passionate about learning new things.
+
+                I am enthusiastic about coding and enjoy the process of building projects from scratch. My commitment to
+                continuous
+                learning and hands-on experience drives me to explore and innovate in the field of technology.</p>
+            <a href="#" class="btn-box">More about me</a>
+        </div>
+    </section>
+    <!-- skill section -->
+    <div class="wrapper">
+        <article id="skill">
+            <div class="container1" id="skills">
+                <h1 class="heading">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5' style='color:#ffae00'></i>
+                        <div class="info">
+                            <span>Html</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-css3' style='color:#147bbc'></i>
+                        <div class="info">
+                            <span>Css</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-javascript' style='color:#b0bc1e'></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-python' style='color:#c32ec9'></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-java' style='color:#c32ec9'></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!-- projects section -->
+    <section>
+        <h1 class="heading" style="color: #a32929; margin-top: 180px;">Projects</h1>
+        <div class="project-cards" id="projects">
+            <div class="card">
+                <img src="i1.png" alt="Astrology Prediction System">
+                <h3>Astrology Prediction System</h3>
+                <p>By using PFSD - Django framework</p>
+                <a href="#">Project Link</a>
+            </div>
+            <div class="card">
+                <img src="i2.jpg" alt="University Event Management System">
+                <h3>University Event Management System</h3>
+                <p>Using JSF, JPA, MySQL</p>
+                <a href="#">Project Link</a>
+            </div>
+            <div class="card">
+                <img src="i3.jpg" alt="Travel Website">
+                <h3>Travel Website</h3>
+                <p>Using Pure HTML and CSS</p>
+                <a href="https://kadamukesh.github.io/travel-website/">Project Link</a>
+            </div>
+            <div class="card">
+                <img src="i5.webp" alt="Amazon Clone">
+                <h3>Amazon Clone</h3>
+                <p>Using Pure HTML and CSS</p>
+                <a href="https://kadamukesh.github.io/Amazon-Clone/">Project Link</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
